@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - GettingStartedWithSpringBootApplication",
+            "request": "launch",
+            "mainClass": "com.app.sa.GettingStartedWithSpringBoot.GettingStartedWithSpringBootApplication",
+            "projectName": "GettingStartedWithSpringBoot"
+        }
+    ]
+}
