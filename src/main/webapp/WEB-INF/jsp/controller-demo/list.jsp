@@ -1,7 +1,9 @@
 <html>
+
 <head>
-<title>Multi-Variable Request URI</title>
+	<title>Multi-Variable Request URI</title>
 </head>
+
 <body>
 	<ol>
 		<li>Name:${name}</li>
@@ -9,4 +11,5 @@
 		<li>Lucky Number:${lucky}</li>
 	</ol>
 </body>
+
 </html>

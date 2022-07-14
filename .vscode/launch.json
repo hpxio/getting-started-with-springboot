@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch GettingStartedWithSpringBootApplication",
+            "request": "launch",
+            "mainClass": "com.app.hpx.gswspringboot.GettingStartedWithSpringBootApplication",
+            "projectName": "GettingStartedWithSpringBoot"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - GettingStartedWithSpringBootApplication",
             "request": "launch",
             "mainClass": "com.app.sa.GettingStartedWithSpringBoot.GettingStartedWithSpringBootApplication",

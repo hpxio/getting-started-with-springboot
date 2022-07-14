@@ -1,4 +1,4 @@
-package com.app.sa.GettingStartedWithSpringBoot.restEndPoint;
+package com.app.hpx.gswspringboot.restEndPoint;
 
 import org.springframework.stereotype.Component;
 

@@ -1,4 +1,4 @@
-package com.app.sa.GettingStartedWithSpringBoot.restEndPoint;
+package com.app.hpx.gswspringboot.restEndPoint;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
