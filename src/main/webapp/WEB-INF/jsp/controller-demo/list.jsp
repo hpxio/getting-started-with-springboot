@@ -8,7 +8,7 @@
 	<ol>
 		<li>Name:${name}</li>
 		<li>ID:${id}</li>
-		<li>Lucky Number:${lucky}</li>
+		<li>Lucky Number:${seq}</li>
 	</ol>
 </body>
 
