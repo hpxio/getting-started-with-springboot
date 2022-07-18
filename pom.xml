@@ -14,7 +14,7 @@
 	
 	<packaging>jar</packaging>
 	
-	<name>GettingStartedWithSpringBoot</name>
+	<name>getting-started-with-springboot</name>
 	<description>Getting Started - Series on Spring Boot Application Development</description>
 
 	<properties>
