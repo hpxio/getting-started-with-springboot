@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -156,7 +157,23 @@ public class SpringBootRestController {
 	 */
 	@PostMapping("/book/create/option2")
 	public BookDetailsModel createBookDetails(BookDetailsModel bookData) {
-		LOG.info("Received request to create Book with : {}", bookData.toString());
+		LOG.info("Received request to create Book with : {}", bookData);
+		return bookData;
+	}
+
+	/**
+	 * In this example, we will create resource by taking inputs from
+	 * HTTP Request Body. The name of the fields should match in the request.
+	 * To have broader control like having default values, optional, etc.
+	 * we can use Jackson APIs for mapping values. And we can also map some
+	 * {@code @RequestParam} with {@code @RequestBody} in the same endpoint.
+	 * 
+	 * @param bookData Information about book to store
+	 * @return Object, details of book stored
+	 */
+	@PostMapping("book/create/option3")
+	public BookDetailsModel createBookDetailsFromRequestBody(@RequestBody BookDetailsModel bookData) {
+		LOG.info("Received request to create Book with : {}", bookData);
 		return bookData;
 	}
 }
