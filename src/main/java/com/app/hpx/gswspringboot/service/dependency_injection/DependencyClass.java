@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.app.hpx.gswspringboot.dependencyInjection;
+package com.app.hpx.gswspringboot.service.dependency_injection;
 
 import org.springframework.stereotype.Component;
 
@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
  * @author COM
  */
 @Component
-public class AppComponent {
+public class DependencyClass {
 
 	/**
 	 * @param strUname
@@ -26,5 +26,4 @@ public class AppComponent {
 		}
 		return true;
 	}
-
 }

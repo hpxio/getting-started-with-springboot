@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.app.hpx.gswspringboot.userInteractions;
+package com.app.hpx.gswspringboot.service.userInteractions;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;

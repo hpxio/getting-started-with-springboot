@@ -1,4 +1,4 @@
-package com.app.hpx.gswspringboot.restEndPoint;
+package com.app.hpx.gswspringboot.service.restEndPoint;
 
 import java.util.HashSet;
 import java.util.Set;

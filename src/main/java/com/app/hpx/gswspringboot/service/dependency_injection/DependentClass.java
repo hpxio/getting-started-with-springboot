@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.app.hpx.gswspringboot.dependencyInjection;
+package com.app.hpx.gswspringboot.service.dependency_injection;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -14,8 +14,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * URL lookup. Controller may contain logics to validate
  * user inputs or even formatting logics to be executed
  * before sending back response to the client.<br/>
- * <div/> FIXME: What is difference b/w Service and
- * Component in Spring Boot? The validations logics can be
+ * The validations logics can be
  * in separate class called as Component. To use those
  * services we need to instantiate service class first
  * before we can actually use that in our logics.<br/>
@@ -23,22 +22,19 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * <div/> This is where <b>Dependency Injection</b>,
  * Component, AutoWiring comes into picture.<br/>
  * 
- * <pre>
-	 The job of @Controller is to create a Map of model
-	 object and find a view but @RestController simply
-	 return the object and object data is directly written
-	 into HTTP response as JSON or XML.
-	  
-	 Read more:
-	 https://javarevisited.blogspot.com/2017/08/difference
-	 -between-restcontroller-and-controller-annotations-
-	 spring-mvc-rest.html#ixzz5pIMpRwJS
- * </pre>
+ * The job of @Controller is to create a Map of model
+ * object and find a view but @RestController simply
+ * return the object and object data is directly written
+ * into HTTP response as JSON or XML.
  * 
- * @author iHSPA
+ * Read more:
+ * https://javarevisited.blogspot.com/2017/08/difference
+ * -between-restcontroller-and-controller-annotations-
+ * spring-mvc-rest.html#ixzz5pIMpRwJS
+ *
  */
 @Controller
-public class AppController {
+public class DependentClass {
 
 	/**
 	 * Difference B/w @Controller & @RestController
@@ -46,7 +42,7 @@ public class AppController {
 
 	// Dependency resolver using Auto-Wiring //
 	@Autowired
-	AppComponent insAppComponent;
+	DependencyClass insAppComponent;
 
 	/**
 	 * Expected URL: http://localhost:8081/app/validate

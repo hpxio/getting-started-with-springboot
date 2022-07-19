@@ -9,8 +9,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.app.hpx.gswspringboot.properties.PropertiesBasics;
-import com.app.hpx.gswspringboot.properties.PropertyConfigurationBasics;
+import com.app.hpx.gswspringboot.service.properties.PropertiesBasics;
+import com.app.hpx.gswspringboot.service.properties.PropertyConfigurationBasics;
 
 @SpringBootApplication
 public class GettingStartedWithSpringBootApplication implements CommandLineRunner {

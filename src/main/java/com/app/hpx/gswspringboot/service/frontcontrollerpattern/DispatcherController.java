@@ -6,7 +6,7 @@
  * @see info Front Contrller Pattern
  * 		https://www.baeldung.com/java-front-controller-pattern
  */
-package com.app.hpx.gswspringboot.frontcontrollerpattern;
+package com.app.hpx.gswspringboot.service.frontcontrollerpattern;
 
 /**
  * <p>

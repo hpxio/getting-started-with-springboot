@@ -1,6 +1,6 @@
 package com.app.hpx.gswspringboot.model;
 
-public class    BookDetailsModel {
+public class BookDetailsModel {
     private int bookId;
     private String bookName;
     private String bookAuthor;
