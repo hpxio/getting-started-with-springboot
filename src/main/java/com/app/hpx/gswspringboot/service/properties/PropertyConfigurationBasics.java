@@ -1,4 +1,4 @@
-package com.app.hpx.gswspringboot.properties;
+package com.app.hpx.gswspringboot.service.properties;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
