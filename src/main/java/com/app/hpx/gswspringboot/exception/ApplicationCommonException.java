@@ -1,41 +1,54 @@
 package com.app.hpx.gswspringboot.exception;
 
+import org.springframework.http.HttpStatus;
+
 public class ApplicationCommonException extends RuntimeException {
-    private int exceptionCode;
-    private String exceptionMessage;
-    private String exceptionType;
+	private int exceptionCode;
+	private String exceptionMessage;
+	private String exceptionType;
 
-    public ApplicationCommonException() {
-        /* do nothing */
-    }
+	private HttpStatus status;
 
-    public ApplicationCommonException(int exceptionCode, String exceptionMessage, String exceptionType) {
-        this.exceptionCode = exceptionCode;
-        this.exceptionMessage = exceptionMessage;
-        this.exceptionType = exceptionType;
-    }
+	public ApplicationCommonException() {
+		/* do nothing */
+	}
 
-    public int getExceptionCode() {
-        return exceptionCode;
-    }
+	public ApplicationCommonException(int exceptionCode, String exceptionMessage, String exceptionType, HttpStatus status) {
+		this.exceptionCode = exceptionCode;
+		this.exceptionMessage = exceptionMessage;
+		this.exceptionType = exceptionType;
+		this.status = status;
+	}
 
-    public void setExceptionCode(int exceptionCode) {
-        this.exceptionCode = exceptionCode;
-    }
+	public int getExceptionCode() {
+		return exceptionCode;
+	}
 
-    public String getExceptionMessage() {
-        return exceptionMessage;
-    }
+	public void setExceptionCode(int exceptionCode) {
+		this.exceptionCode = exceptionCode;
+	}
 
-    public void setExceptionMessage(String exceptionMessage) {
-        this.exceptionMessage = exceptionMessage;
-    }
+	public String getExceptionMessage() {
+		return exceptionMessage;
+	}
 
-    public String getExceptionType() {
-        return exceptionType;
-    }
+	public void setExceptionMessage(String exceptionMessage) {
+		this.exceptionMessage = exceptionMessage;
+	}
 
-    public void setExceptionType(String exceptionType) {
-        this.exceptionType = exceptionType;
-    }
+	public String getExceptionType() {
+		return exceptionType;
+	}
+
+	public void setExceptionType(String exceptionType) {
+		this.exceptionType = exceptionType;
+	}
+
+	public HttpStatus getStatus() {
+		return status;
+	}
+
+	public void setStatus(HttpStatus status) {
+		this.status = status;
+	}
 }

@@ -1,5 +1,7 @@
 package com.app.hpx.gswspringboot.model.response;
 
+import java.util.Objects;
+
 import com.app.hpx.gswspringboot.model.ErrorDetailsModel;
 
 /**
@@ -10,6 +12,10 @@ import com.app.hpx.gswspringboot.model.ErrorDetailsModel;
  */
 public class BaseResponse {
     private ErrorDetailsModel errorDetailsModel;
+
+    public boolean hasError(){
+        return Objects.nonNull(errorDetailsModel);
+    }
 
     public ErrorDetailsModel getErrorDetailsModel() {
         return errorDetailsModel;
