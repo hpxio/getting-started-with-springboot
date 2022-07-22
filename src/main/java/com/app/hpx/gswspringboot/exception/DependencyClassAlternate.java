@@ -4,6 +4,7 @@ import java.util.Objects;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
 
 import com.app.hpx.gswspringboot.exception.ApplicationCommonErrorCodes;
 import com.app.hpx.gswspringboot.exception.ExceptionUtil;
@@ -11,9 +12,9 @@ import com.app.hpx.gswspringboot.model.BookDetailsModel;
 import com.app.hpx.gswspringboot.model.ErrorDetailsModel;
 import com.app.hpx.gswspringboot.service.dependency_injection.DependencyClass;
 
+@Component
 public class DependencyClassAlternate {
 	private static final Logger LOG = LoggerFactory.getLogger(DependencyClass.class);
-	private final ErrorDetailsModel err = new ErrorDetailsModel();
 
 	public void validate(BookDetailsModel bookDetails) {
 		validateYearOfPublishing(bookDetails.getYearOfPublishing());
